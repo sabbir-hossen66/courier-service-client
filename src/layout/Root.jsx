@@ -9,7 +9,7 @@ const Root = () => {
       <main className="pt-16">  {/* push content below navbar */}
         <Outlet />
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };

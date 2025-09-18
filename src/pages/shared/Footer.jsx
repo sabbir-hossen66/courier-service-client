@@ -2,14 +2,14 @@ import { Facebook, Twitter, Linkedin, Github } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-700 text-gray-300 mt-100">
+    <footer className="bg-[#678A33] text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo + Description */}
           <div>
             <h2 className="text-2xl font-bold text-white">MyCompany</h2>
-            <p className="mt-3 text-sm text-gray-400">
+            <p className="mt-3 text-sm text-gray-200">
               We build modern web solutions that help businesses grow and
               succeed in the digital era.
             </p>
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-white">
           © {new Date().getFullYear()} MyCompany. All rights reserved.
         </div>
       </div>
