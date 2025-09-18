@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           
           {/* Logo */}
-          <div className="text-2xl font-bold text-gray-200">Fast Courier</div>
+          <div className="text-2xl font-bold text-gray-200 cursor-pointer">Fast Courier</div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">

@@ -4,7 +4,9 @@
 }
 
 
-
+.text-hover {
+  transition: color 0.5s ease;
+}
 .text-hover:hover {
   color: #98ED28;
 }
