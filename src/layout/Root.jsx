@@ -6,7 +6,7 @@ const Root = () => {
   return (
     <>
       <Navbar/>
-      <main className="pt-16">  {/* push content below navbar */}
+      <main className="pt-16">
         <Outlet />
       </main>
       <Footer/>
