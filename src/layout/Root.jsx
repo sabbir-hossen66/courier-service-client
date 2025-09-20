@@ -4,13 +4,13 @@ import Footer from '../pages/shared/Footer';
 
 const Root = () => {
   return (
-    <>
+    <div>
       <Navbar/>
       <main className="pt-16">
         <Outlet />
       </main>
       <Footer/>
-    </>
+    </div>
   );
 };
 
