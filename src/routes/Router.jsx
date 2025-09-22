@@ -5,10 +5,8 @@ import Authentication from "../authLayout/Authentication";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
 
-
-
 export const router = createBrowserRouter([
-{
+  {
     path: "/",
     Component: Root,
     errorElement: <div>error2</div>,
@@ -20,18 +18,17 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path:"/",
-    Component:Authentication,
+    path: "/",
+    Component: Authentication,
     children: [
       {
         path: "login",
-        element: <Login/>,
+        element: <Login />,
       },
       {
         path: "register",
-        element: <Register/>,
+        element: <Register />,
       },
-    
     ],
-  }
+  },
 ]);
