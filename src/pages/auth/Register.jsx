@@ -1,16 +1,28 @@
 import { useState } from "react";
 import { Eye, EyeOff, LogIn } from "lucide-react";
 import { useForm } from "react-hook-form";
+import useAuth from "../../hooks/useAuth";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const { createUser } = useAuth();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data, "ni");
+    createUser(data.email, data.password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user, "ki");
+      })
+      .catch((error) => {
+        error.message;
+      });
+  };
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
@@ -35,7 +47,8 @@ const Register = () => {
                 required: "First name is required",
                 pattern: {
                   value: /^[A-Z][a-z]+$/,
-                  message: "First name must start with a capital letter and contain only letters",
+                  message:
+                    "First name must start with a capital letter and contain only letters",
                 },
               })}
             />
