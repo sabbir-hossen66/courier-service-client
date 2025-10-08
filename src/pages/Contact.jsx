@@ -12,6 +12,11 @@ const Contact = () => {
         dolorem similique eos sint est maxime tempora? Aliquid veritatis dolor
         ut?
       </h2>
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        dolorem similique eos sint est maxime tempora? Aliquid veritatis dolor
+        ut?
+      </h2>
     </div>
   );
 };
